@@ -77,6 +77,47 @@ namespace LanguageBasics.TypeBasics
             Console.WriteLine($"x={x}, y={y}, z={z}");
             Console.WriteLine("**********TypeBasics.Example04 END************\n");
         }
+
+        public static void Example05()
+        {
+            Console.WriteLine("**********TypeBasics.Example05 BEGIN**********");
+            Console.WriteLine("**********Value Types vs Reference Types******");
+
+            PointValue p1 = new PointValue();
+            p1.X = 7;
+            PointValue p2 = p1;             // Assignment causes copy
+            Console.WriteLine(p1.X);  // 7
+            Console.WriteLine(p2.X);  // 7
+            p1.X = 9;                  // Change p1.X
+            Console.WriteLine(p1.X);  // 9
+            Console.WriteLine(p2.X);  // 7
+
+            PointReference p1Ref = new PointReference();
+            p1Ref.X = 7;
+            PointReference p2Ref = p1Ref;             // Copies p1 reference
+            Console.WriteLine(p1Ref.X);  // 7
+            Console.WriteLine(p2Ref.X);  // 7
+            p1Ref.X = 9;                  // Change p1.X
+            Console.WriteLine(p1Ref.X);  // 9
+            Console.WriteLine(p2Ref.X);  // 9
+
+            Example05Null();
+            Console.WriteLine("**********TypeBasics.Example05 END************\n");
+        }
+        private static void Example05Null()
+        {
+            // References with null 
+            PointReference pRef = null;
+            Console.WriteLine(pRef == null);   // True
+
+            // The following line would generates a runtime error
+            // (a NullReferenceException is thrown):
+            // Console.WriteLine(pRef.X);
+
+            // Values with null 
+            // PointValue pValue = null;  // Compile-time error
+            // int x = null;    // Compile-time error
+        }
     }
 
     class UnitConverter                                             // class custom type
@@ -97,4 +138,8 @@ namespace LanguageBasics.TypeBasics
             Population = Population + 1;                            // Increment the static Population field
         }
     }
+
+    public struct PointValue { public int X, Y; }                        // custom value type definition
+
+    public class PointReference { public int X, Y; }
 }
