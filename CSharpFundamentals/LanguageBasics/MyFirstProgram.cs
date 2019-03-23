@@ -1,5 +1,7 @@
 ﻿using LanguageBasics.TypeBasics;
-using LanguageBasics.NumericTypes;
+using LanguageBasics.TypeBasics.NumericTypes;
+using LanguageBasics.TypeBasics.BooleanTypes;
+using LanguageBasics.TypeBasics.StringANdCharacterTypes;
 using System;                                               // Importing namespace
 
 namespace LanguageBasics                                    // Namespace declaration
@@ -16,13 +18,16 @@ namespace LanguageBasics                                    // Namespace declara
             // ******************** TypeBasics ******************** //
 
             // ******************** Numeric Types****************** //
-            Numerics.Example01();
-            Numerics.Example02();
-            Numerics.Example03();
-            Numerics.Example04();
-            Numerics.Example05();
-            Numerics.Example06();
+            // numericTypes();
             // ******************** Numeric Types****************** //
+
+            // ******************** Boolean Types****************** //
+            //Booleans.Example01();
+            // ******************** Boolean Types****************** //
+
+            // ******************** String/Character Types********* //
+            //StringsAndCharacter.Example01();
+            // ******************** String/Character Types********* //
 
         }                                                   // End of method
 
@@ -33,6 +38,16 @@ namespace LanguageBasics                                    // Namespace declara
             Basics.Example03();
             Basics.Example04();
             Basics.Example05();
+        }
+
+        private static void numericTypes()
+        {
+            Numerics.Example01();
+            Numerics.Example02();
+            Numerics.Example03();
+            Numerics.Example04();
+            Numerics.Example05();
+            Numerics.Example06();
         }
 
         static int MultiplyBy23(int number)

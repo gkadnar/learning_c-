@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LanguageBasics.NumericTypes
+namespace LanguageBasics.TypeBasics.NumericTypes
 {
     class Numerics
     {
