@@ -3,6 +3,9 @@ using LanguageBasics.TypeBasics.NumericTypes;
 using LanguageBasics.TypeBasics.BooleanTypes;
 using LanguageBasics.TypeBasics.StringANdCharacterTypes;
 using LanguageBasics.VariablesAndParameters;
+using LanguageBasics.ExpressionsAndOperators;
+using LanguageBasics.Statements;
+using LanguageBasics.Namespaces;
 
 using LanguageBasics.ArrayBasics;
 
@@ -39,9 +42,24 @@ namespace LanguageBasics                                    // Namespace declara
             // ******************** Arrays************************* //
 
             // ******************** Vars and Params**************** //
-            VarsAndPArams.Example01();
-            VarsAndPArams.Example02();
+            //VarsAndPArams.Example01();
+            //VarsAndPArams.Example02();
             // ******************** Vars and Params**************** //
+
+            // ******************** Expessions and Operators******* //
+            //ExprsAndOpss.Example01();
+            // ******************** Expessions and Operators******* //
+
+            // ******************** Statements******************** //
+            // Stejtments.Example01();
+            // Stejtments.Example02();
+            // Stejtments.Example03();
+            // Stejtments.Example04();
+            // ******************** Statements******************** //
+
+            // ******************** Namespaces******************** //
+            Nejmspejses.Example01();
+            // ******************** Namespaces******************** //
 
         }                                                   // End of method
 
