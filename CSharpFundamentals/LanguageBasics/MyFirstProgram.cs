@@ -2,6 +2,10 @@
 using LanguageBasics.TypeBasics.NumericTypes;
 using LanguageBasics.TypeBasics.BooleanTypes;
 using LanguageBasics.TypeBasics.StringANdCharacterTypes;
+using LanguageBasics.VariablesAndParameters;
+
+using LanguageBasics.ArrayBasics;
+
 using System;                                               // Importing namespace
 
 namespace LanguageBasics                                    // Namespace declaration
@@ -28,6 +32,16 @@ namespace LanguageBasics                                    // Namespace declara
             // ******************** String/Character Types********* //
             //StringsAndCharacter.Example01();
             // ******************** String/Character Types********* //
+
+            // ******************** Arrays************************* //
+            //Arrays.Example01();
+            //Arrays.Example02();
+            // ******************** Arrays************************* //
+
+            // ******************** Vars and Params**************** //
+            VarsAndPArams.Example01();
+            VarsAndPArams.Example02();
+            // ******************** Vars and Params**************** //
 
         }                                                   // End of method
 
