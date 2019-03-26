@@ -57,7 +57,6 @@ namespace CreatingTypes.Classes
             PaymentForm pf = new PaymentForm();
             pf.Field1 = 23;
             Console.WriteLine("Partial types example = " + pf.Field1);
-
         }
     }
 
