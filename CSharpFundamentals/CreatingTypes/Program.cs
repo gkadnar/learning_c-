@@ -3,7 +3,7 @@ using CreatingTypes.Classes;
 using CreatingTypes.Inheritance;
 using CreatingTypes.ObjectType;
 using CreatingTypes.Interfaces;
-
+using CreatingTypes.Generics;
 
 namespace CreatingTypes
 {
@@ -24,8 +24,13 @@ namespace CreatingTypes
             // ******************** THe Object Type************* //
 
             // ******************** Interfaces ***************** //
-            InterfaceExamples.Example01();
+            //InterfaceExamples.Example01();
             // ******************** Interfaces ***************** //
+
+            // ******************** Generics ******************* //
+            GenericsExamples.Example01();
+            // ******************** Generics ******************* //
+
         }
     }
 }
