@@ -2,6 +2,8 @@
 using CreatingTypes.Classes;
 using CreatingTypes.Inheritance;
 using CreatingTypes.ObjectType;
+using CreatingTypes.Interfaces;
+
 
 namespace CreatingTypes
 {
@@ -17,9 +19,13 @@ namespace CreatingTypes
             //InheritanceExamples.Example01();
             // ******************** Inheritance***************** //
 
+            // ******************** The Object Type************* //
+            //ObjectTypeExamples.Example01();
             // ******************** THe Object Type************* //
-            ObjectTypeExamples.Example01();
-            // ******************** THe Object Type************* //
+
+            // ******************** Interfaces ***************** //
+            InterfaceExamples.Example01();
+            // ******************** Interfaces ***************** //
         }
     }
 }
